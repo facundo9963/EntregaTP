@@ -1,5 +1,5 @@
 namespace Aseguradora.Aplicacion;
-public interface IRepositorioVehiculo
+public interface IRepositorioPoliza
 {
     //establecer casos de uso
 }
