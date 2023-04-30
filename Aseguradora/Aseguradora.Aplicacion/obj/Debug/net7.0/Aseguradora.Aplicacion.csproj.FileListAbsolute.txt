@@ -1,0 +1,12 @@
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/bin/Debug/net7.0/Aseguradora.Aplicacion.deps.json
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/bin/Debug/net7.0/Aseguradora.Aplicacion.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/bin/Debug/net7.0/Aseguradora.Aplicacion.pdb
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/Aseguradora.Aplicacion.csproj.AssemblyReference.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/Aseguradora.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/Aseguradora.Aplicacion.AssemblyInfoInputs.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/Aseguradora.Aplicacion.AssemblyInfo.cs
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/Aseguradora.Aplicacion.csproj.CoreCompileInputs.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/Aseguradora.Aplicacion.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/refint/Aseguradora.Aplicacion.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/Aseguradora.Aplicacion.pdb
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/ref/Aseguradora.Aplicacion.dll
