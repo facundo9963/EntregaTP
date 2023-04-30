@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IVNVPpx+6rk7b64uSjqQV/by2/9VqADrS1kvSIAajn9YQpPq1rXKqwhPQgH2UISWshOY/HgBB+zX2K+yoPzNHg==",
+  "dgSpecHash": "MkanAhJVpfqg+odnn6SSJfS4gQKk/xMFSk1XjX2v9CFked3ATaLNv9p0lggJ4f8CLIpIiH/hCVxUvpGVgFp0Ng==",
   "success": true,
-  "projectFilePath": "/home/juania/proyectosDotnet/TrabajoPractico/Aseguradora/Aseguradora.Consola/Aseguradora.Consola.csproj",
+  "projectFilePath": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/Aseguradora.Consola.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
