@@ -4,6 +4,10 @@ using Aseguradora.Aplicacion;
 public class RepositorioPolizaTXT : IRepositorioPoliza
 {
     readonly string _archivo = "polizas.txt";
+    //Digitos:
+    //1XXXXX = Poliza
+    //X00000 = Unicidad
+    const int _IdUnico = 100000;
     public void AgregarPoliza(Poliza p)
     {
         using var sw = new StreamWriter(_archivo, true);
@@ -17,11 +21,11 @@ public class RepositorioPolizaTXT : IRepositorioPoliza
     }
     public void ModificarPoliza(Poliza p)
     {
-
+        
     }
     public void EliminarPoliza(int Id)
     {
-
+        
     }
 
     public List<Poliza> ListarPolizas()
