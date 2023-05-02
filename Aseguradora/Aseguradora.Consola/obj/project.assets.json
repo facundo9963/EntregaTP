@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Aseguradora.Aplicacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Aseguradora.Aplicacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aseguradora.Aplicacion.dll": {}
+        }
+      },
+      "Aseguradora.Repositorios/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Aseguradora.Aplicacion": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Aseguradora.Repositorios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aseguradora.Repositorios.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Aseguradora.Aplicacion/1.0.0": {
+      "type": "project",
+      "path": "../Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj",
+      "msbuildProject": "../Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj"
+    },
+    "Aseguradora.Repositorios/1.0.0": {
+      "type": "project",
+      "path": "../Aseguradora.Repositorios/Aseguradora.Repositorios.csproj",
+      "msbuildProject": "../Aseguradora.Repositorios/Aseguradora.Repositorios.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Aseguradora.Aplicacion >= 1.0.0",
+      "Aseguradora.Repositorios >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/juania/.nuget/packages/": {}
@@ -13,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/juania/proyectosDotnet/TrabajoPractico/Aseguradora/Aseguradora.Consola/Aseguradora.Consola.csproj",
+      "projectUniqueName": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/Aseguradora.Consola.csproj",
       "projectName": "Aseguradora.Consola",
-      "projectPath": "/home/juania/proyectosDotnet/TrabajoPractico/Aseguradora/Aseguradora.Consola/Aseguradora.Consola.csproj",
+      "projectPath": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/Aseguradora.Consola.csproj",
       "packagesPath": "/home/juania/.nuget/packages/",
-      "outputPath": "/home/juania/proyectosDotnet/TrabajoPractico/Aseguradora/Aseguradora.Consola/obj/",
+      "outputPath": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/juania/.nuget/NuGet/NuGet.Config"
@@ -31,7 +69,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj": {
+              "projectPath": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj"
+            },
+            "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/Aseguradora.Repositorios.csproj": {
+              "projectPath": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/Aseguradora.Repositorios.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

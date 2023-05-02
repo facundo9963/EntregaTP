@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MQje6l8OvL49pRoaKP0OVuoTG6mu3KoRgLA5A/nYoze1Sxirs8EhWwvasyYLj8NZ3qgbNA+/We0A7SR4N8t06Q==",
+  "dgSpecHash": "97GVWsdgFMW/SVw0N7ogq0a4+1g3vaOEPqOP+Zcxgw00hS4tMufERs5kj12CtFeGYfKmHka+PD2+8AxtMeORKA==",
   "success": true,
-  "projectFilePath": "/home/juania/proyectosDotnet/TrabajoPractico/Aseguradora/Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj",
+  "projectFilePath": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
