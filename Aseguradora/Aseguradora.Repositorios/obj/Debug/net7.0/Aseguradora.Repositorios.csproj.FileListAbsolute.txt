@@ -1,0 +1,30 @@
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/bin/Debug/net7.0/Aseguradora.Repositorios.deps.json
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/bin/Debug/net7.0/Aseguradora.Repositorios.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/bin/Debug/net7.0/Aseguradora.Repositorios.pdb
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/bin/Debug/net7.0/Aseguradora.Aplicacion.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/bin/Debug/net7.0/Aseguradora.Aplicacion.pdb
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/Aseguradora.Repositorios.csproj.AssemblyReference.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/Aseguradora.Repositorios.GeneratedMSBuildEditorConfig.editorconfig
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/Aseguradora.Repositorios.AssemblyInfoInputs.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/Aseguradora.Repositorios.AssemblyInfo.cs
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/Aseguradora.Repositorios.csproj.CoreCompileInputs.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/Aseguradora.Repositorios.csproj.CopyComplete
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/Aseguradora.Repositorios.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/refint/Aseguradora.Repositorios.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/Aseguradora.Repositorios.pdb
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Repositorios/obj/Debug/net7.0/ref/Aseguradora.Repositorios.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\refint\Aseguradora.Repositorios.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.pdb
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Repositorios.deps.json
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Repositorios.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Repositorios.pdb
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Aplicacion.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Aplicacion.pdb
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.AssemblyInfoInputs.cache
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.AssemblyInfo.cs
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.csproj.CoreCompileInputs.cache
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.csproj.CopyComplete
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\ref\Aseguradora.Repositorios.dll

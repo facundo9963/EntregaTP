@@ -1,0 +1,40 @@
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/bin/Debug/net7.0/Aseguradora.Consola
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/bin/Debug/net7.0/Aseguradora.Consola.deps.json
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/bin/Debug/net7.0/Aseguradora.Consola.runtimeconfig.json
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/bin/Debug/net7.0/Aseguradora.Consola.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/bin/Debug/net7.0/Aseguradora.Consola.pdb
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/bin/Debug/net7.0/Aseguradora.Aplicacion.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/bin/Debug/net7.0/Aseguradora.Repositorios.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/bin/Debug/net7.0/Aseguradora.Aplicacion.pdb
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/bin/Debug/net7.0/Aseguradora.Repositorios.pdb
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/Aseguradora.Consola.csproj.AssemblyReference.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/Aseguradora.Consola.GeneratedMSBuildEditorConfig.editorconfig
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/Aseguradora.Consola.AssemblyInfoInputs.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/Aseguradora.Consola.AssemblyInfo.cs
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/Aseguradora.Consola.csproj.CoreCompileInputs.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/Aseguradora.Consola.csproj.CopyComplete
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/Aseguradora.Consola.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/refint/Aseguradora.Consola.dll
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/Aseguradora.Consola.pdb
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/Aseguradora.Consola.genruntimeconfig.cache
+/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Consola/obj/Debug/net7.0/ref/Aseguradora.Consola.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\Aseguradora.Consola.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\refint\Aseguradora.Consola.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\Aseguradora.Consola.pdb
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\bin\Debug\net7.0\Aseguradora.Consola.exe
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\bin\Debug\net7.0\Aseguradora.Consola.deps.json
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\bin\Debug\net7.0\Aseguradora.Consola.runtimeconfig.json
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\bin\Debug\net7.0\Aseguradora.Consola.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\bin\Debug\net7.0\Aseguradora.Consola.pdb
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\bin\Debug\net7.0\Aseguradora.Aplicacion.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\bin\Debug\net7.0\Aseguradora.Repositorios.dll
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\bin\Debug\net7.0\Aseguradora.Aplicacion.pdb
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\bin\Debug\net7.0\Aseguradora.Repositorios.pdb
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\Aseguradora.Consola.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\Aseguradora.Consola.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\Aseguradora.Consola.AssemblyInfoInputs.cache
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\Aseguradora.Consola.AssemblyInfo.cs
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\Aseguradora.Consola.csproj.CoreCompileInputs.cache
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\Aseguradora.Consola.csproj.CopyComplete
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\Aseguradora.Consola.genruntimeconfig.cache
+D:\Usuario\Desktop\INFORMÁTICA\FACULTAD\segundo año\Sem .Net\Proyecto\Aseguradora\Aseguradora.Consola\obj\Debug\net7.0\ref\Aseguradora.Consola.dll
