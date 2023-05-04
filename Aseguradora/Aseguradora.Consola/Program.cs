@@ -3,6 +3,8 @@ using Aseguradora.Repositorios;
 using Aseguradora.Consola;
 
 IRepositorioPoliza repoPoliza = new RepositorioPolizaTXT();
+IRepositorioTitular repoTitular = new RepositorioTitularTXT();
+IRepositorioVehiculo repoVehiculo = new RepositorioVehiculoTXT();
 
 var agregarPoliza = new AgregarPolizaUseCase(repoPoliza);
 var listarPolizas = new ListarPolizasUseCase(repoPoliza);
@@ -18,24 +20,11 @@ do
     switch (input)
     {
         case 1:
-            int id = int.Parse(Console.ReadLine() ?? "");
-            int IdVehiculo = int.Parse(Console.ReadLine() ?? "");
-            float Valor = float.Parse(Console.ReadLine() ?? "");
-            float Franquicia = float.Parse(Console.ReadLine() ?? "");
-            Poliza.TipoCob TipoCobertura = (Poliza.TipoCob) Enum.Parse(typeof(Poliza.TipoCob), Console.ReadLine() ?? "");
-            agregarPoliza.Ejecutar(new Poliza() {Id = id,
-                                                IdVehiculo = IdVehiculo,
-                                                Valor = Valor,
-                                                Franquicia = Franquicia,
-                                                TipoCobertura = TipoCobertura,
-                                                FechaInicioVigencia = DateTime.Now,
-                                                FechaFinVigencia = DateTime.Today
-                                                });
             break;
         case 2:
             menuDeVehiculos.MostrarOpciones();
             Console.WriteLine("Escribi tu opcion");
-            int opc2 = Convert.ToInt32(Console.ReadLine());
+            int opc2 = int.Parse(Console.ReadLine() ?? "");
             menuDeVehiculos.EjecutarOpcion(opc2);
             break;
         case 3:

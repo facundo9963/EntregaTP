@@ -21,18 +21,19 @@ public class RepositorioVehiculoTXT : IRepositorioVehiculo
         {
             using var sw = new StreamWriter(_archivo);
             using var sr = new StreamReader(_archivo);
+            var vehiculo_leido = new Vehiculo();
             while (!sr.EndOfStream && !encontre)
             {
-                var vehiculo_leido = new Vehiculo();
                 vehiculo_leido.Id = int.Parse(sr.ReadLine() ?? "");
                 vehiculo_leido.Dominio = sr.ReadLine() ?? "";
                 vehiculo_leido.Marca = sr.ReadLine() ?? "";
                 vehiculo_leido.Anio = int.Parse(sr.ReadLine() ?? "");
                 vehiculo_leido.IdTitular = int.Parse(sr.ReadLine() ?? "");
-                if (vehiculo_leido.Id == v.Id)
+                if (vehiculo_leido.Id == v.Id) {
                     vehiculo_leido = v;
-
-                sw.WriteLine(vehiculo_leido);
+                    encontre = true;
+                    sw.WriteLine(vehiculo_leido);
+                };
             }
         }
         catch (Exception e)

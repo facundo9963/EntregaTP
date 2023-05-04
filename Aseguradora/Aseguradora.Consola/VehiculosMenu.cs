@@ -7,39 +7,49 @@ public class VehiculosMenu : IMenu
     {
         Console.WriteLine("1- Agregar Vehiculo");
         Console.WriteLine("2- Eliminar Vehiculo");
-        Console.WriteLine("2- Modificar Vehiculo");
-        Console.WriteLine("2- Listar Vehiculos");
+        Console.WriteLine("3- Modificar Vehiculo");
+        Console.WriteLine("4- Listar Vehiculos");
     }
     public void EjecutarOpcion(int opc)
     {
         switch (opc)
         {
             case 1:
-                AgregarVehiculo();
+                Agregar();
+                break;
+            case 2:
+                Eliminar();
+                break;
+            case 3:
+                Modificar();
+                break;
+            case 4:
+                Listar();
                 break;
         }
     }
-    private void AgregarVehiculo()
+    private void Agregar()
     {
-        IRepositorioVehiculo repoVehiculos = new RepositorioVehiculoTXT();
-        var agregarVehiculo = new AgregarVehiculoUseCase(repoVehiculos);
+        IRepositorioVehiculo repo = new RepositorioVehiculoTXT();
+        var agregarVehiculo = new AgregarVehiculoUseCase(repo);
 
-        Console.WriteLine("Escribi el ID del vehiculo");
-        int id = Convert.ToInt32(Console.ReadLine());
+        Console.Write(" Id (en realidad deberia asignarse automaticamente):");
+        int id = int.Parse(Console.ReadLine() ?? "");
 
-        Console.WriteLine("Escribi el dominio del vehiculo");
+        Console.Write(" Ingrese dominio: ");
         string dominio = Console.ReadLine() ?? "";
 
-        Console.WriteLine("Escribi la marca del vehiculo");
+        Console.Write(" Ingrese marca: ");
         string marca = Console.ReadLine() ?? "";
 
-        Console.WriteLine("Escribi el año del vehiculo");
-        int anio = Convert.ToInt32(Console.ReadLine());
+        Console.Write(" Ingrese año: ");
+        int anio = int.Parse(Console.ReadLine() ?? "");
 
-        Console.WriteLine("Escribi el ID del titular del vehiculo");
-        int idTitular = Convert.ToInt32(Console.ReadLine());
+        Console.Write(" Ingrese Id del titular: ");
+        int idTitular = int.Parse(Console.ReadLine() ?? "");
+        //hacer una verificación de que existe, sino agregar un nuevo titular
 
-        agregarVehiculo.Ejecutar(new Vehiculo
+        agregarVehiculo.Ejecutar(new Vehiculo()
         {
             Id = id,
             Dominio = dominio,
@@ -49,4 +59,16 @@ public class VehiculosMenu : IMenu
         });
     }
 
+    private void Eliminar()
+    {
+
+    }
+    private void Modificar()
+    {
+
+    }
+    private void Listar()
+    {
+
+    }
 }
