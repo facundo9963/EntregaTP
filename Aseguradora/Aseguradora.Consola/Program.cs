@@ -13,9 +13,17 @@ IMenu menuDeVehiculos = new VehiculosMenu();
 
 int input;
 do
-{
-    Console.WriteLine("2-Menu de Vehiculos");
-    Console.WriteLine("Escribi tu opcion");
+{   
+    Console.WriteLine();
+    Console.WriteLine("------- MENU -------");
+    Console.WriteLine("1: Menu de Polizas");
+    Console.WriteLine("2: Menu de Titulares");
+    Console.WriteLine("3: Menu de Vehiculos");
+    Console.WriteLine("4: Menu de Siniestros (sin implementar)");
+    Console.WriteLine("5: Menu de Terceros (sin implementar)");
+    Console.WriteLine("0: Salida");
+    Console.Write("Ingrese opcion: ");
+    Console.WriteLine();
     input = int.Parse(Console.ReadLine() ?? "");
     switch (input)
     {
@@ -30,15 +38,8 @@ do
         case 3:
             break;
         case 4:
-            var lista = listarPolizas.Ejecutar();
-            foreach (Poliza p in lista)
-            {
-                Console.WriteLine(p);
-            }
             break;
         case 5:
-            break;
-        case 0:
             break;
     }
 }
