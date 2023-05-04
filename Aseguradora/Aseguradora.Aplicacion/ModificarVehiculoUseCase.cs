@@ -6,8 +6,8 @@ public class ModificarVehiculoUseCase
     {
         _repo = repo;
     }
-    public void Ejecutar(Vehiculo vehiculo)
+    public void Ejecutar(Vehiculo v)
     {
-        _repo.ModificarVehiculo(vehiculo);
+        _repo.ModificarVehiculo(v);
     }
 }
