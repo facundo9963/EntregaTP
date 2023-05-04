@@ -33,20 +33,39 @@ public class PolizasMenu : IMenu
     private void Agregar()
     {
         var agregarPoliza = new AgregarPolizaUseCase(repo);
-        int id = int.Parse(Console.ReadLine() ?? "");
+
+        Console.WriteLine("Nueva Poliza:");
+
+        //int id =
+        //Console.WriteLine($" Id: {id} (generado automaticamente)"); 
+
+        //verificar que existe, elegir agregar si no existe
+        Console.Write(" Ingrese Id del Vehiculo asegurado: ");
         int IdVehiculo = int.Parse(Console.ReadLine() ?? "");
+
+        Console.Write(" Ingrese valor: ");
         float Valor = float.Parse(Console.ReadLine() ?? "");
+        Console.Write(" Ingrese franquicia: ");
         float Franquicia = float.Parse(Console.ReadLine() ?? "");
+
+        Console.Write(" Ingrese tipo de cobertura (0 ResponsabilidadCivil, 1 TodoRiesgo): ");
         Poliza.TipoCob TipoCobertura = (Poliza.TipoCob) Enum.Parse(typeof(Poliza.TipoCob), Console.ReadLine() ?? "");
+        
+        DateTime fechaInicioVigencia = DateTime.Today;
+        Console.WriteLine($" Fecha de inicio de vigencia: {fechaInicioVigencia:dd/MM/yy}");
+
+        Console.Write(" Ingrese fecha de fin de vigencia (dd/MM/yy): ");
+        DateTime fechaFinVigencia = DateTime.Parse(Console.ReadLine() ?? "");
+
         agregarPoliza.Ejecutar(new Poliza() 
         {
-            Id = id,
+            //Id = id,
             IdVehiculo = IdVehiculo,
             Valor = Valor,
             Franquicia = Franquicia,
             TipoCobertura = TipoCobertura,
-            FechaInicioVigencia = DateTime.Now,
-            FechaFinVigencia = DateTime.Today
+            FechaInicioVigencia = fechaInicioVigencia,
+            FechaFinVigencia = fechaFinVigencia
         });
     }
     private void Eliminar()

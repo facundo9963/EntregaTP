@@ -15,6 +15,6 @@ public class Poliza
     
     public override string ToString()
     {
-        return $"{Id}: Id vehiculo {IdVehiculo}, valor asegurado de ${Valor} y franquicia de ${Franquicia} (Cobertura de tipo {TipoCobertura}). Vigente desde {FechaInicioVigencia:dd/MM/yyyy} hasta {FechaFinVigencia:dd/MM/yyyy}";
+        return $"{Id}: Id vehiculo {IdVehiculo}, valor asegurado de ${Valor} y franquicia de ${Franquicia} (Cobertura de tipo {TipoCobertura}). Vigente desde {FechaInicioVigencia:dd/MM/yy} hasta {FechaFinVigencia:dd/MM/yy}";
     }
 }
