@@ -6,8 +6,8 @@ public class ModificarTitularUseCase
     {
         _repo = repo;
     }
-    public void Ejecutar(Titular t)
+    public void Ejecutar(int dni)
     {
-        _repo.ModificarTitular(t);
+        _repo.ModificarTitular(dni);
     }
 }
