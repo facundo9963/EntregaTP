@@ -10,6 +10,6 @@ public class Siniestro
     
     public override string ToString()
     {
-        return $"{Id}: Id Poliza {IdPoliza}, ingreso {FechaIngreso:dd/MM/yyyy}. Descripcion: ({FechaOcurrencia:dd/MM/yyyy}, {Direccion}) {Descripcion}";
+        return $"{Id}: Id Póliza {IdPoliza}, ingreso {FechaIngreso:dd/MM/yyyy}. Descripcion: ({FechaOcurrencia:dd/MM/yyyy}, {Direccion}) {Descripcion}";
     }
 }

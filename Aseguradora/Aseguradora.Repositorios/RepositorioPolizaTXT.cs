@@ -4,10 +4,6 @@ using Aseguradora.Aplicacion;
 public class RepositorioPolizaTXT : IRepositorioPoliza
 {
     readonly string _archivo = "polizas.txt";
-    readonly string _archivoId = "idPolizas.txt";
-
-    //id
-    
     public void AgregarPoliza(Poliza p)
     {
         using var sw = new StreamWriter(_archivo, true);
@@ -21,11 +17,69 @@ public class RepositorioPolizaTXT : IRepositorioPoliza
     }
     public void ModificarPoliza(Poliza p)
     {
-        
+        var lista = ListarPolizas();
+        bool encontrado = false;
+        for (int i = 0; i < lista.Count; i++)
+        {
+            if (lista[i].Id == p.Id)
+            {
+                encontrado = true;
+                lista[i] = p;
+                break;
+            }
+        }
+        try 
+        {
+            if (!encontrado) throw new Exception($"No existe Póliza de Id: {p.Id}");
+            else
+            {
+                using (var vaciarArchivo = new StreamWriter(_archivo, false))
+                {
+                    
+                };
+                foreach (Poliza x in lista)
+                {
+                    AgregarPoliza(x);
+                }
+            }
+        }  
+        catch (Exception e) 
+        {
+            Console.WriteLine(e.Message);
+        }
     }
-    public void EliminarPoliza(int Id)
+    public void EliminarPoliza(int IdBuscado)
     {
-        
+        var lista = ListarPolizas();
+        bool encontrado = false;
+        for (int i = 0; i < lista.Count; i++)
+        {
+            if (lista[i].Id == IdBuscado)
+            {
+                encontrado = true;
+                lista.RemoveAt(i);
+                break;
+            }
+        }
+        try 
+        {
+            if (!encontrado) throw new Exception($"No existe Póliza de Id: {IdBuscado}");
+            else
+            {
+                using (var vaciarArchivo = new StreamWriter(_archivo, false))
+                {
+                    
+                };
+                foreach (Poliza p in lista)
+                {
+                    AgregarPoliza(p);
+                }
+            }
+        }  
+        catch (Exception e) 
+        {
+            Console.WriteLine(e.Message);
+        }
     }
 
     public List<Poliza> ListarPolizas()

@@ -9,6 +9,6 @@ public class Vehiculo
     
     public override string ToString()
     {
-        return $"{Id}: Vehiculo {Dominio}, {Marca}({Anio}). Id titular: {IdTitular}";
+        return $"{Id}: Vehículo {Dominio}, {Marca}({Anio}). Id titular: {IdTitular}";
     }
 }
