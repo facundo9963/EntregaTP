@@ -35,12 +35,12 @@ public class TitularesMenu : IMenu
         }
     }
 
-/*
-Agregar y Modificar no necesitan try y catch. De todas formas están porque así
-están escritos los agregar y modificar de las demás entidades, además de que
-aún falta implementar el manejo de la propiedad ListaVehiculos, junto con
-Listar2 o ListarTitularesConSusVehiculosUseCase();
-*/
+    /*
+    Agregar y Modificar no necesitan try y catch. De todas formas están porque así
+    están escritos los agregar y modificar de las demás entidades, además de que
+    aún falta implementar el manejo de la propiedad ListaVehiculos, junto con
+    Listar2 o ListarTitularesConSusVehiculosUseCase();
+    */
 
     private void Agregar()
     {
@@ -159,6 +159,17 @@ Listar2 o ListarTitularesConSusVehiculosUseCase();
     }
     private void Listar2()
     {
-
+        var listarTitularesConSusVehiculos = new ListarTitularesConSusVehiculosUseCase(repo);
+        var lista = listarTitularesConSusVehiculos.Ejecutar();
+        Console.WriteLine("Listando Titulares:");
+        foreach (Titular t in lista)
+        {
+            Console.WriteLine(t);
+            Console.WriteLine("Vehiculos: ");
+            foreach (Vehiculo v in t.ListaVehiculos)
+            {
+                Console.WriteLine(v);
+            }
+        }
     }
 }

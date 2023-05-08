@@ -28,26 +28,26 @@ public class RepositorioTitularTXT : IRepositorioTitular
                 break;
             }
         }
-        try 
+        try
         {
             if (!encontrado) throw new Exception($"No existe Titular de Dni: {t.Dni}");
             else
             {
                 using (var vaciarArchivo = new StreamWriter(_archivo, false))
                 {
-                    
+
                 };
                 foreach (Titular x in lista)
                 {
                     AgregarTitular(x);
                 }
             }
-        }  
-        catch (Exception e) 
+        }
+        catch (Exception e)
         {
             Console.WriteLine(e.Message);
         }
-        
+
     }
     public void EliminarTitular(int IdBuscado)
     {
@@ -62,33 +62,33 @@ public class RepositorioTitularTXT : IRepositorioTitular
                 break;
             }
         }
-        try 
+        try
         {
             if (!encontrado) throw new Exception($"No existe Titular de Id: {IdBuscado}");
             else
             {
                 using (var vaciarArchivo = new StreamWriter(_archivo, false))
                 {
-                    
+
                 };
                 foreach (Titular t in lista)
                 {
                     AgregarTitular(t);
                 }
             }
-        }  
-        catch (Exception e) 
+        }
+        catch (Exception e)
         {
             Console.WriteLine(e.Message);
         }
-        
+
     }
 
     public List<Titular> ListarTitulares()
     {
         var resultado = new List<Titular>();
         using var sr = new StreamReader(_archivo);
-        while(!sr.EndOfStream)
+        while (!sr.EndOfStream)
         {
             var t = new Titular();
             t.Id = int.Parse(sr.ReadLine() ?? "");
@@ -105,9 +105,9 @@ public class RepositorioTitularTXT : IRepositorioTitular
 
     public List<Titular> ListarTitularesConSusVehiculos()
     {
-        var resultado = new List<Titular>();
+        List<Titular> resultado = new List<Titular>();
         using var sr = new StreamReader(_archivo);
-        while(!sr.EndOfStream)
+        while (!sr.EndOfStream)
         {
             var t = new Titular();
             t.Id = int.Parse(sr.ReadLine() ?? "");
@@ -117,7 +117,10 @@ public class RepositorioTitularTXT : IRepositorioTitular
             t.Telefono = int.Parse(sr.ReadLine() ?? "");
             t.Direccion = sr.ReadLine() ?? "";
             t.Email = sr.ReadLine() ?? "";
-
+            IRepositorioVehiculo repoVehiculo = new RepositorioVehiculoTXT();
+            ListarVehiculosUseCase listaVehiculos = new ListarVehiculosUseCase(repoVehiculo);
+            List<Vehiculo> todosLosVehiculos = listaVehiculos.Ejecutar();
+            t.ListaVehiculos = todosLosVehiculos.Where(Vehiculo => Vehiculo.IdTitular == t.Id).ToList();
             resultado.Add(t);
         }
         return resultado;
