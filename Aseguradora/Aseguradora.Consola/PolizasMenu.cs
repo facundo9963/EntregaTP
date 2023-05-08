@@ -38,8 +38,7 @@ public class PolizasMenu : IMenu
 
             Console.WriteLine("Nueva Póliza:");
 
-            int Id = ObtenerIdUtility.ObtenerId(repo, true);
-            Console.WriteLine($" Id: {Id} (generado automaticamente)"); 
+            Console.WriteLine($" Id: {ObtenerIdUtility.ObtenerId(repo, false)} (generado automaticamente)"); 
 
             Console.Write(" Ingrese Id del Vehículo asegurado (2XXX): ");
             int IdVehiculo = int.Parse(Console.ReadLine() ?? "");
@@ -62,7 +61,7 @@ public class PolizasMenu : IMenu
 
             agregarPoliza.Ejecutar(new Poliza() 
             {
-                Id = Id,
+                Id = ObtenerIdUtility.ObtenerId(repo, true),
                 IdVehiculo = IdVehiculo,
                 Valor = Valor,
                 Franquicia = Franquicia,

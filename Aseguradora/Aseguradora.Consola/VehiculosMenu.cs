@@ -38,8 +38,7 @@ public class VehiculosMenu : IMenu
 
             Console.WriteLine("Nuevo Vehículo:");
 
-            int id = ObtenerIdUtility.ObtenerId(repo, true);
-            Console.WriteLine($" Id: {id} (generado automaticamente)");
+            Console.WriteLine($" Id: {ObtenerIdUtility.ObtenerId(repo, false)} (generado automaticamente)");
 
             Console.Write(" Ingrese dominio: ");
             string dominio = Console.ReadLine() ?? "";
@@ -56,7 +55,7 @@ public class VehiculosMenu : IMenu
 
             agregarVehiculo.Ejecutar(new Vehiculo()
             {
-                Id = id,
+                Id = ObtenerIdUtility.ObtenerId(repo, true),
                 Dominio = dominio,
                 Marca = marca,
                 Anio = anio,
