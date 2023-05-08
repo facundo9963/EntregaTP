@@ -16,55 +16,70 @@ public class RepositorioVehiculoTXT : IRepositorioVehiculo
     }
     public void ModificarVehiculo(Vehiculo v)
     {
-        Boolean encontre = false;
-        try
+        var lista = ListarVehiculos();
+        bool encontrado = false;
+        for (int i = 0; i < lista.Count; i++)
         {
-            using var sw = new StreamWriter(_archivo);
-            using var sr = new StreamReader(_archivo);
-            while (!sr.EndOfStream && !encontre)
+            if (lista[i].Id == v.Id)
             {
-                var vehiculo_leido = new Vehiculo();
-                vehiculo_leido.Id = int.Parse(sr.ReadLine() ?? "");
-                vehiculo_leido.Dominio = sr.ReadLine() ?? "";
-                vehiculo_leido.Marca = sr.ReadLine() ?? "";
-                vehiculo_leido.Anio = int.Parse(sr.ReadLine() ?? "");
-                vehiculo_leido.IdTitular = int.Parse(sr.ReadLine() ?? "");
-                if (vehiculo_leido.Id == v.Id)
-                    vehiculo_leido = v;
-
-                sw.WriteLine(vehiculo_leido);
+                encontrado = true;
+                lista[i] = v;
+                break;
             }
         }
-        catch (Exception e)
+        try 
+        {
+            if (!encontrado) throw new Exception($"No existe vehículo de Id: {v.Id}");
+            else
+            {
+                using (var vaciarArchivo = new StreamWriter(_archivo, false))
+                {
+                    
+                };
+                foreach (Vehiculo x in lista)
+                {
+                    AgregarVehiculo(x);
+                }
+            }
+        }  
+        catch (Exception e) 
         {
             Console.WriteLine(e.Message);
         }
     }
-    public void EliminarVehiculo(int Id)
+    public void EliminarVehiculo(int IdBuscado)
     {
-        Boolean encontre = false;
-        try
+        var lista = ListarVehiculos();
+        bool encontrado = false;
+        for (int i = 0; i < lista.Count; i++)
         {
-            using var sw = new StreamWriter(_archivo);
-            using var sr = new StreamReader(_archivo);
-            while (!sr.EndOfStream && !encontre)
+            if (lista[i].Id == IdBuscado)
             {
-                var vehiculo_leido = new Vehiculo();
-                vehiculo_leido.Id = int.Parse(sr.ReadLine() ?? "");
-                vehiculo_leido.Dominio = sr.ReadLine() ?? "";
-                vehiculo_leido.Marca = sr.ReadLine() ?? "";
-                vehiculo_leido.Anio = int.Parse(sr.ReadLine() ?? "");
-                vehiculo_leido.IdTitular = int.Parse(sr.ReadLine() ?? "");
-                if (vehiculo_leido.Id != Id)
-                    sw.WriteLine(vehiculo_leido);
+                encontrado = true;
+                lista.RemoveAt(i);
+                break;
             }
         }
-        catch (Exception e)
+        try 
+        {
+            if (!encontrado) throw new Exception($"No existe vehículo de Id: {IdBuscado}");
+            else
+            {
+                using (var vaciarArchivo = new StreamWriter(_archivo, false))
+                {
+                    
+                };
+                foreach (Vehiculo v in lista)
+                {
+                    AgregarVehiculo(v);
+                }
+            }
+        }  
+        catch (Exception e) 
         {
             Console.WriteLine(e.Message);
         }
     }
-
     public List<Vehiculo> ListarVehiculos()
     {
         var resultado = new List<Vehiculo>();

@@ -2,55 +2,62 @@
 using Aseguradora.Repositorios;
 using Aseguradora.Consola;
 
-IRepositorioPoliza repoPoliza = new RepositorioPolizaTXT();
-
-var agregarPoliza = new AgregarPolizaUseCase(repoPoliza);
-var listarPolizas = new ListarPolizasUseCase(repoPoliza);
-
-IMenu menuDeVehiculos = new VehiculosMenu();
-
-int input;
+IMenu menuEntidad;
+int input = -1;
 do
-{
-    Console.WriteLine("2-Menu de Vehiculos");
-    Console.WriteLine("Escribi tu opcion");
-    input = int.Parse(Console.ReadLine() ?? "");
+{   
+    Console.WriteLine("------- MENU -------");
+    Console.WriteLine("1: Menu de Titulares");
+    Console.WriteLine("2: Menu de Vehículos");
+    Console.WriteLine("3: Menu de Pólizas");
+    Console.WriteLine("4: Menu de Siniestros (sin implementar)");
+    Console.WriteLine("5: Menu de Terceros (sin implementar)");
+    Console.WriteLine("0: Salida");
+    Console.Write("Ingrese opción: ");
+    leerInput();
+    Console.WriteLine();
     switch (input)
     {
         case 1:
-            int id = int.Parse(Console.ReadLine() ?? "");
-            int IdVehiculo = int.Parse(Console.ReadLine() ?? "");
-            float Valor = float.Parse(Console.ReadLine() ?? "");
-            float Franquicia = float.Parse(Console.ReadLine() ?? "");
-            Poliza.TipoCob TipoCobertura = (Poliza.TipoCob) Enum.Parse(typeof(Poliza.TipoCob), Console.ReadLine() ?? "");
-            agregarPoliza.Ejecutar(new Poliza() {Id = id,
-                                                IdVehiculo = IdVehiculo,
-                                                Valor = Valor,
-                                                Franquicia = Franquicia,
-                                                TipoCobertura = TipoCobertura,
-                                                FechaInicioVigencia = DateTime.Now,
-                                                FechaFinVigencia = DateTime.Today
-                                                });
+            menuEntidad = new TitularesMenu();
+            menuEntidad.MostrarOpciones();
+            Console.Write("Ingrese opción: ");
+            leerInput();
+            menuEntidad.EjecutarOpcion(input);
             break;
         case 2:
-            menuDeVehiculos.MostrarOpciones();
-            Console.WriteLine("Escribi tu opcion");
-            int opc2 = Convert.ToInt32(Console.ReadLine());
-            menuDeVehiculos.EjecutarOpcion(opc2);
+            menuEntidad = new VehiculosMenu();
+            menuEntidad.MostrarOpciones();
+            Console.Write("Ingrese opción: ");
+            leerInput();
+            menuEntidad.EjecutarOpcion(input);
             break;
         case 3:
+            menuEntidad = new PolizasMenu();
+            menuEntidad.MostrarOpciones();
+            Console.Write("Ingrese opción: ");
+            leerInput();
+            menuEntidad.EjecutarOpcion(input);
             break;
         case 4:
-            var lista = listarPolizas.Ejecutar();
-            foreach (Poliza p in lista)
-            {
-                Console.WriteLine(p);
-            }
+            Console.WriteLine("No implementado");
             break;
         case 5:
+            Console.WriteLine("No implementado");
             break;
         case 0:
+            Console.Write("Fin del programa (Presione enter para salir...)");
+            Console.ReadLine();
+            break;
+        default:
+            Console.WriteLine("Opción no válida.");
             break;
     }
+    Console.WriteLine();
 }
 while (input != 0);
+
+void leerInput()
+{
+    try {input = int.Parse(Console.ReadLine() ?? "");} catch (Exception e) {Console.WriteLine(e.Message);}
+}
