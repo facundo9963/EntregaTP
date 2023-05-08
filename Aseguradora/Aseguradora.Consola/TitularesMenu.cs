@@ -50,8 +50,7 @@ Listar2 o ListarTitularesConSusVehiculosUseCase();
 
             Console.WriteLine("Nuevo Titular:");
 
-            int id = ObtenerIdUtility.ObtenerId(repo, true);
-            Console.WriteLine($" Id: {id} (generado automaticamente)");
+            Console.WriteLine($" Id: {ObtenerIdUtility.ObtenerId(repo, false)} (generado automaticamente)");
 
             Console.Write(" Ingrese apellido: ");
             string apellido = Console.ReadLine() ?? "";
@@ -71,11 +70,9 @@ Listar2 o ListarTitularesConSusVehiculosUseCase();
             Console.Write(" Ingrese email: ");
             string email = Console.ReadLine() ?? "";
 
-            //List<Vehiculo> ListaVehiculos = 
-
             agregarTitular.Ejecutar(new Titular()
             {
-                Id = id,
+                Id = ObtenerIdUtility.ObtenerId(repo, true),
                 Apellido = apellido,
                 Nombre = nombre,
                 Dni = dni,

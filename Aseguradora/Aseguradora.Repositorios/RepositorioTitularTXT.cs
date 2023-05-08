@@ -14,7 +14,6 @@ public class RepositorioTitularTXT : IRepositorioTitular
         sw.WriteLine(t.Telefono);
         sw.WriteLine(t.Direccion);
         sw.WriteLine(t.Email);
-        sw.WriteLine(t.ListaVehiculos);
     }
     public void ModificarTitular(Titular t)
     {
@@ -118,9 +117,7 @@ public class RepositorioTitularTXT : IRepositorioTitular
             t.Telefono = int.Parse(sr.ReadLine() ?? "");
             t.Direccion = sr.ReadLine() ?? "";
             t.Email = sr.ReadLine() ?? "";
-            IRepositorioVehiculo repoVehiculo = new RepositorioVehiculoTXT();
-            var listaVehiculos = new ListarVehiculosUseCase(repoVehiculo);
-            t.ListaVehiculos = listaVehiculos.Ejecutar();
+
             resultado.Add(t);
         }
         return resultado;
