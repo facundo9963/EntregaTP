@@ -86,18 +86,26 @@ public class RepositorioTitularTXT : IRepositorioTitular
 
     public List<Titular> ListarTitulares()
     {
-        var resultado = new List<Titular>();
+        List<Titular> resultado = new List<Titular>();
         using var sr = new StreamReader(_archivo);
         while (!sr.EndOfStream)
         {
-            var t = new Titular();
-            t.Id = int.Parse(sr.ReadLine() ?? "");
-            t.Apellido = sr.ReadLine() ?? "";
-            t.Nombre = sr.ReadLine() ?? "";
-            t.Dni = int.Parse(sr.ReadLine() ?? "");
-            t.Telefono = int.Parse(sr.ReadLine() ?? "");
-            t.Direccion = sr.ReadLine() ?? "";
-            t.Email = sr.ReadLine() ?? "";
+            int id = int.Parse(sr.ReadLine() ?? "");
+            string apellido = sr.ReadLine() ?? "";
+            string nombre = sr.ReadLine() ?? "";
+            int dni = int.Parse(sr.ReadLine() ?? "");
+            int telefono = int.Parse(sr.ReadLine() ?? "");
+            string direccion = sr.ReadLine() ?? "";
+            string email = sr.ReadLine() ?? "";
+            Titular t = new Titular(
+                id,
+                apellido,
+                nombre,
+                dni,
+                telefono,
+                direccion,
+                email
+            );
             resultado.Add(t);
         }
         return resultado;
@@ -109,18 +117,27 @@ public class RepositorioTitularTXT : IRepositorioTitular
         using var sr = new StreamReader(_archivo);
         while (!sr.EndOfStream)
         {
-            var t = new Titular();
-            t.Id = int.Parse(sr.ReadLine() ?? "");
-            t.Apellido = sr.ReadLine() ?? "";
-            t.Nombre = sr.ReadLine() ?? "";
-            t.Dni = int.Parse(sr.ReadLine() ?? "");
-            t.Telefono = int.Parse(sr.ReadLine() ?? "");
-            t.Direccion = sr.ReadLine() ?? "";
-            t.Email = sr.ReadLine() ?? "";
+            int id = int.Parse(sr.ReadLine() ?? "");
+            string apellido = sr.ReadLine() ?? "";
+            string nombre = sr.ReadLine() ?? "";
+            int dni = int.Parse(sr.ReadLine() ?? "");
+            int telefono = int.Parse(sr.ReadLine() ?? "");
+            string direccion = sr.ReadLine() ?? "";
+            string email = sr.ReadLine() ?? "";
             IRepositorioVehiculo repoVehiculo = new RepositorioVehiculoTXT();
             ListarVehiculosUseCase listaVehiculos = new ListarVehiculosUseCase(repoVehiculo);
             List<Vehiculo> todosLosVehiculos = listaVehiculos.Ejecutar();
-            t.ListaVehiculos = todosLosVehiculos.Where(Vehiculo => Vehiculo.IdTitular == t.Id).ToList();
+            List<Vehiculo> ListaVehiculos = todosLosVehiculos.Where(Vehiculo => Vehiculo.IdTitular == id).ToList();
+            Titular t = new Titular(
+                id,
+                apellido,
+                nombre,
+                dni,
+                telefono,
+                direccion,
+                email,
+                ListaVehiculos
+            );
             resultado.Add(t);
         }
         return resultado;

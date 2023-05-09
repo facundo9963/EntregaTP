@@ -86,12 +86,18 @@ public class RepositorioVehiculoTXT : IRepositorioVehiculo
         using var sr = new StreamReader(_archivo);
         while(!sr.EndOfStream)
         {
-            var v = new Vehiculo();
-            v.Id = int.Parse(sr.ReadLine() ?? "");
-            v.Dominio = sr.ReadLine() ?? "";
-            v.Marca = sr.ReadLine() ?? "";
-            v.Anio = int.Parse(sr.ReadLine() ?? "");
-            v.IdTitular = int.Parse(sr.ReadLine() ?? "");
+            int id = int.Parse(sr.ReadLine() ?? "");
+            string dominio = sr.ReadLine() ?? "";
+            string marca = sr.ReadLine() ?? "";
+            int anio = int.Parse(sr.ReadLine() ?? "");
+            int idTitular = int.Parse(sr.ReadLine() ?? "");
+            Vehiculo v = new Vehiculo(
+                id,
+                dominio,
+                marca,
+                anio,
+                idTitular
+            );
             resultado.Add(v);
         }
         return resultado;

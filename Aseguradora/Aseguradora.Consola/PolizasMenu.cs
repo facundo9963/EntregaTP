@@ -38,9 +38,9 @@ public class PolizasMenu : IMenu
 
             Console.WriteLine("Nueva Póliza:");
 
-            Console.WriteLine($" Id: {ObtenerIdUtility.ObtenerId(repo, false)} (generado automaticamente)"); 
+            Console.WriteLine($" Id: {ObtenerIdUtility.ObtenerId(repo, false)+1} (generado automaticamente)"); 
 
-            Console.Write(" Ingrese Id del Vehículo asegurado (2XXX): ");
+            Console.Write(" Ingrese Id del Vehículo asegurado: ");
             int IdVehiculo = int.Parse(Console.ReadLine() ?? "");
             if (!VehiculoExiste(IdVehiculo)) throw new Exception($"No existe un vehículo de Id: {IdVehiculo}");
 
@@ -59,16 +59,15 @@ public class PolizasMenu : IMenu
             Console.Write(" Ingrese fecha de fin de vigencia (dd/MM/yy): ");
             DateTime fechaFinVigencia = DateTime.Parse(Console.ReadLine() ?? "");
 
-            agregarPoliza.Ejecutar(new Poliza() 
-            {
-                Id = ObtenerIdUtility.ObtenerId(repo, true),
-                IdVehiculo = IdVehiculo,
-                Valor = Valor,
-                Franquicia = Franquicia,
-                TipoCobertura = TipoCobertura,
-                FechaInicioVigencia = fechaInicioVigencia,
-                FechaFinVigencia = fechaFinVigencia
-            });
+            agregarPoliza.Ejecutar(new Poliza(
+                ObtenerIdUtility.ObtenerId(repo, true),
+                IdVehiculo,
+                Valor,
+                Franquicia,
+                TipoCobertura,
+                fechaInicioVigencia,
+                fechaFinVigencia
+            ));
 
             Console.WriteLine("Nueva Póliza agregada con éxito.");
         }
@@ -86,7 +85,7 @@ public class PolizasMenu : IMenu
             Console.Write(" Ingrese Id de Póliza a modificar: ");
             int Id = int.Parse(Console.ReadLine() ?? "");
 
-            Console.Write(" Ingrese Id del Vehículo asegurado (2XXX): ");
+            Console.Write(" Ingrese Id del Vehículo asegurado: ");
             int IdVehiculo = int.Parse(Console.ReadLine() ?? "");
             if (!VehiculoExiste(IdVehiculo)) throw new Exception($"No existe un Vehículo de Id: {IdVehiculo}");
 
@@ -105,16 +104,15 @@ public class PolizasMenu : IMenu
             Console.Write(" Ingrese fecha de fin de vigencia (dd/MM/yy): ");
             DateTime fechaFinVigencia = DateTime.Parse(Console.ReadLine() ?? "");
             
-            modificarPoliza.Ejecutar(new Poliza()
-            {
-                Id = Id,
-                IdVehiculo = IdVehiculo,
-                Valor = Valor,
-                Franquicia = Franquicia,
-                TipoCobertura = TipoCobertura,
-                FechaInicioVigencia = fechaInicioVigencia,
-                FechaFinVigencia = fechaFinVigencia
-            });
+            modificarPoliza.Ejecutar(new Poliza(
+                Id,
+                IdVehiculo,
+                Valor,
+                Franquicia,
+                TipoCobertura,
+                fechaInicioVigencia,
+                fechaFinVigencia
+            ));
 
             Console.WriteLine("Póliza modificada con éxito.");
         }

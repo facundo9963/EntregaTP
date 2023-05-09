@@ -19,8 +19,9 @@ public static class ObtenerIdUtility
         if (incrementar)
         {
             using var sw = new StreamWriter(archivoId, false);
-            sw.WriteLine(++id);
+            id++;
+            sw.WriteLine(id);
         }
-        return id;
+        return id;  
     }
 }

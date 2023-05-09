@@ -38,7 +38,7 @@ public class VehiculosMenu : IMenu
 
             Console.WriteLine("Nuevo Vehículo:");
 
-            Console.WriteLine($" Id: {ObtenerIdUtility.ObtenerId(repo, false)} (generado automaticamente)");
+            Console.WriteLine($" Id: {ObtenerIdUtility.ObtenerId(repo, false)+1} (generado automáticamente)");
 
             Console.Write(" Ingrese dominio: ");
             string dominio = Console.ReadLine() ?? "";
@@ -49,18 +49,17 @@ public class VehiculosMenu : IMenu
             Console.Write(" Ingrese año: ");
             int anio = int.Parse(Console.ReadLine() ?? "");
 
-            Console.Write(" Ingrese Id del titular (1XXX): ");
+            Console.Write(" Ingrese Id del titular: ");
             int idTitular = int.Parse(Console.ReadLine() ?? "");
             if (!TitularExiste(idTitular)) throw new Exception($"No existe un Titular de Id: {idTitular}");
 
-            agregarVehiculo.Ejecutar(new Vehiculo()
-            {
-                Id = ObtenerIdUtility.ObtenerId(repo, true),
-                Dominio = dominio,
-                Marca = marca,
-                Anio = anio,
-                IdTitular = idTitular,
-            });
+            agregarVehiculo.Ejecutar(new Vehiculo(
+                ObtenerIdUtility.ObtenerId(repo, true),
+                dominio,
+                marca,
+                anio,
+                idTitular
+            ));
 
             Console.WriteLine("Nuevo Vehículo agregado con éxito.");
         }
@@ -87,18 +86,17 @@ public class VehiculosMenu : IMenu
             Console.Write(" Ingrese año: ");
             int anio = int.Parse(Console.ReadLine() ?? "");
 
-            Console.Write(" Ingrese Id del titular (1XXX): ");
+            Console.Write(" Ingrese Id del titular: ");
             int idTitular = int.Parse(Console.ReadLine() ?? "");
             if (!TitularExiste(idTitular)) throw new Exception($"No existe un Titular de Id: {idTitular}");
 
-            modificarVehiculo.Ejecutar(new Vehiculo()
-            {
-                Id = id,
-                Dominio = dominio,
-                Marca = marca,
-                Anio = anio,
-                IdTitular = idTitular,
-            });
+            modificarVehiculo.Ejecutar(new Vehiculo(
+                id,
+                dominio,
+                marca,
+                anio,
+                idTitular
+            ));
 
             Console.WriteLine("Vehículo modificado con éxito.");
         }
