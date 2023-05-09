@@ -50,7 +50,7 @@ public class TitularesMenu : IMenu
 
             Console.WriteLine("Nuevo Titular:");
 
-            Console.WriteLine($" Id: {ObtenerIdUtility.ObtenerId(repo, false)} (generado automaticamente)");
+            Console.WriteLine($" Id: {ObtenerIdUtility.ObtenerId(repo, false)+1} (generado automaticamente)");
 
             Console.Write(" Ingrese apellido: ");
             string apellido = Console.ReadLine() ?? "";
@@ -70,16 +70,15 @@ public class TitularesMenu : IMenu
             Console.Write(" Ingrese email: ");
             string email = Console.ReadLine() ?? "";
 
-            agregarTitular.Ejecutar(new Titular()
-            {
-                Id = ObtenerIdUtility.ObtenerId(repo, true),
-                Apellido = apellido,
-                Nombre = nombre,
-                Dni = dni,
-                Telefono = telefono,
-                Direccion = direccion,
-                Email = email,
-            });
+            agregarTitular.Ejecutar(new Titular(
+                ObtenerIdUtility.ObtenerId(repo, true),
+                apellido,
+                nombre,
+                dni,
+                telefono,
+                direccion,
+                email
+            ));
 
             Console.WriteLine("Nuevo Titular agregado con éxito.");
         }
@@ -98,14 +97,14 @@ public class TitularesMenu : IMenu
             Console.Write(" Ingrese Id de Titular a modificar: ");
             int id = int.Parse(Console.ReadLine() ?? "");
 
+            Console.Write(" Ingrese DNI de Titular a modificar: ");
+            int dni = int.Parse(Console.ReadLine() ?? "");
+
             Console.Write(" Ingrese apellido: ");
             string apellido = Console.ReadLine() ?? "";
 
             Console.Write(" Ingrese nombre: ");
             string nombre = Console.ReadLine() ?? "";
-
-            Console.Write(" Ingrese DNI: ");
-            int dni = int.Parse(Console.ReadLine() ?? "");
 
             Console.Write(" Ingrese teléfono: ");
             int telefono = int.Parse(Console.ReadLine() ?? "");
@@ -116,16 +115,15 @@ public class TitularesMenu : IMenu
             Console.Write(" Ingrese email: ");
             string email = Console.ReadLine() ?? "";
 
-            modificarTitular.Ejecutar(new Titular()
-            {
-                Id = id,
-                Apellido = apellido,
-                Nombre = nombre,
-                Dni = dni,
-                Telefono = telefono,
-                Direccion = direccion,
-                Email = email,
-            });
+            modificarTitular.Ejecutar(new Titular(
+                id,
+                apellido,
+                nombre,
+                dni,
+                telefono,
+                direccion,
+                email
+            ));
 
             Console.WriteLine("Titular modificado con éxito.");
         }
@@ -168,7 +166,7 @@ public class TitularesMenu : IMenu
             Console.WriteLine("Vehiculos: ");
             foreach (Vehiculo v in t.ListaVehiculos)
             {
-                Console.WriteLine(v);
+                Console.WriteLine("  " + v);
             }
         }
     }

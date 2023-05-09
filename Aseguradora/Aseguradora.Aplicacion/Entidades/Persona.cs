@@ -9,6 +9,6 @@ public abstract class Persona
     
     public override string ToString()
     {
-        return $"{Id}: {Apellido}, {Nombre}. DNI {Dni}, Telefono {Telefono}";
+        return $"Id: {Id}, Apellido: {Apellido}, Nombre: {Nombre}, DNI {Dni}, Telefono {Telefono}";
     }
 }

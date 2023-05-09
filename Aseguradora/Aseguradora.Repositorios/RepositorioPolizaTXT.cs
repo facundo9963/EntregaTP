@@ -88,14 +88,22 @@ public class RepositorioPolizaTXT : IRepositorioPoliza
         using var sr = new StreamReader(_archivo);
         while(!sr.EndOfStream)
         {
-            var p = new Poliza();
-            p.Id = int.Parse(sr.ReadLine() ?? "");
-            p.IdVehiculo = int.Parse(sr.ReadLine() ?? "");
-            p.Valor = float.Parse(sr.ReadLine() ?? "");
-            p.Franquicia = float.Parse(sr.ReadLine() ?? "");
-            p.TipoCobertura = (Poliza.TipoCob) Enum.Parse(typeof(Poliza.TipoCob), sr.ReadLine() ?? "");
-            p.FechaInicioVigencia = DateTime.Parse(sr.ReadLine() ?? "");
-            p.FechaFinVigencia = DateTime.Parse(sr.ReadLine() ?? "");
+            int Id = int.Parse(sr.ReadLine() ?? "");
+            int IdVehiculo = int.Parse(sr.ReadLine() ?? "");
+            float Valor = float.Parse(sr.ReadLine() ?? "");
+            float Franquicia = float.Parse(sr.ReadLine() ?? "");
+            Poliza.TipoCob TipoCobertura = (Poliza.TipoCob) Enum.Parse(typeof(Poliza.TipoCob), sr.ReadLine() ?? "");
+            DateTime FechaInicioVigencia = DateTime.Parse(sr.ReadLine() ?? "");
+            DateTime FechaFinVigencia = DateTime.Parse(sr.ReadLine() ?? "");
+            Poliza p = new Poliza(
+                Id,
+                IdVehiculo,
+                Valor,
+                Franquicia,
+                TipoCobertura,
+                FechaInicioVigencia,
+                FechaFinVigencia
+            );
             resultado.Add(p);
         }
         return resultado;
