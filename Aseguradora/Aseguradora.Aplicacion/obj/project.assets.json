@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/juania/.nuget/packages/": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Facultad\\.NET CSharp\\TrabajoPractico\\EntregaTP\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj",
       "projectName": "Aseguradora.Aplicacion",
-      "projectPath": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj",
-      "packagesPath": "/home/juania/.nuget/packages/",
-      "outputPath": "/home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\Facultad\\.NET CSharp\\TrabajoPractico\\EntregaTP\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\Facultad\\.NET CSharp\\TrabajoPractico\\EntregaTP\\Aseguradora\\Aseguradora.Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/juania/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -10,3 +10,15 @@
 /home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/refint/Aseguradora.Aplicacion.dll
 /home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/Aseguradora.Aplicacion.pdb
 /home/juania/proyectosDotnet/TrabajoPractico/EntregaTP/Aseguradora/Aseguradora.Aplicacion/obj/Debug/net7.0/ref/Aseguradora.Aplicacion.dll
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\bin\Debug\net7.0\Aseguradora.Aplicacion.deps.json
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\bin\Debug\net7.0\Aseguradora.Aplicacion.dll
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\bin\Debug\net7.0\Aseguradora.Aplicacion.pdb
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.AssemblyInfo.cs
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.dll
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\refint\Aseguradora.Aplicacion.dll
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.pdb
+C:\Users\Usuario\Documents\Facultad\.NET CSharp\TrabajoPractico\EntregaTP\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\ref\Aseguradora.Aplicacion.dll
